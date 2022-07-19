@@ -6,11 +6,26 @@ h1 {
   color: dodgerblue;
 }
 
+ul {
+  transform: rotate(180deg);
+}
+ul > li {
+  transform: rotate(-180deg);
+}
+
 span,
 p {
   font-family: sans-serif;
   font-size: 16px;
   font-weight: 400;
+}
+
+p::first-letter {
+  color: mediumslateblue;
+  float: left;
+  font-size: 20px;
+  margin: 0 0.1em 0 0;
+  line-height: 0.85;
 }
 
 .border {
@@ -19,6 +34,14 @@ p {
 
 .highlight {
   color: darkorange;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .link {
