@@ -95,3 +95,35 @@ body {
   width: 47%;
   margin-right: 2%;
 }
+
+.quote-box-container {
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 20pt;
+}
+
+.quote-box {
+  font-size: 8pt;
+  font-weight: bold;
+  background-color: #e8dc9b;
+  border: 2px thick gray;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.icon-styles {
+  float: left;
+  margin-right: 5px;
+}
+
+.reviewer-container {
+  margin-top: 10px;
+}
+
+.reviewer-publication {
+  font-style: italic;
+}
+
+.block {
+  display: block;
+}
