@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/signup.css" />
+    <title>SignUp Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="align-center">Sign Up</h1>
+    </header>
+    <main>
+      <section>
+        <h1>Enter Details Below</h1>
+      </section>
+        <form class="form-styles" action="https://mumstudents.org/params.php">
+          <div class="margin">
+            <label for="name">Name:</label>
+            <input type="text" name="name" />
+          </div>
+          <div class="margin">
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender">Male</input>
+            <input type="radio" name="gender">Female</input>
+          </div>
+          <div class="margin">
+            <label for="age">Age:</label>
+            <input type="number" name="age" min="10" max="100" />
+          </div>
+          <div class="margin">
+            <label for="personality">Personality type:</label>
+            <input type="text" name="personality" />
+            <span> (Don't Know your type) </span>
+          </div>
+          <div class="margin">
+            <label for="os">Favourite OS:</label>
+            <select name="os">
+              <option>Windows</option>
+              <option>Mac</option>
+              <option>Linux</option>
+            </select>
+          </div>
+          <div class="margin">
+            <label for="seekingage">Seeking Age:</label>
+            <input type="number" name="seekingage" min="0" max="100" />
+            <span> to </span>
+            <input type="number" name="seekingage" min="0" max="100" />
+          </div>
+          <div>
+            <input class="button-styles" type="submit" value="Submit" />
+          </div>
+        </form>
+    </main>
+  </body>
+</html>
