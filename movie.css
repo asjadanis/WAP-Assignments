@@ -153,3 +153,13 @@ a {
   border-bottom-right-radius: 17px;
   border-bottom-left-radius: 17px;
 }
+
+.validator-styles {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.validator-img-styles {
+  opacity: 0.5;
+}
