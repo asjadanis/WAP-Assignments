@@ -6,6 +6,14 @@ body {
   padding: 0;
 }
 
+dd {
+  margin-bottom: 15px;
+}
+
+a {
+  display: block;
+}
+
 .header-container {
   display: flex;
   flex-direction: column;
@@ -54,6 +62,11 @@ body {
 .right-container {
   width: 250px;
   float: right;
+  background-color: #a2b964;
+  border-top-right-radius: 17px;
+  font-size: 8pt;
+  font-family: Arial, sans-serif;
+  border-bottom-right-radius: 17px;
 }
 
 .rotten-background {
@@ -80,7 +93,12 @@ body {
 .movie-overview-styles {
   background-image: url("./public/images/lab3-images/overview.png");
   border-top-right-radius: 17px;
-  height: 100px;
+  height: 412px;
+  margin-bottom: 10pt;
+}
+
+.movie-details-container {
+  margin-left: 10px;
 }
 
 .left {
@@ -126,4 +144,12 @@ body {
 
 .block {
   display: block;
+}
+
+.bottom-bar {
+  background-color: #a2b964;
+  text-align: center;
+  margin-top: 989.4px;
+  border-bottom-right-radius: 17px;
+  border-bottom-left-radius: 17px;
 }
