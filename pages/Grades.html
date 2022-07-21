@@ -4,17 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/grades.css" />
     <title>Grades</title>
   </head>
   <body>
     <header>
-      <h1>Grades</h1>
+      <h1 class="align-center">Grades</h1>
     </header>
     <main>
-      <h1>Retrieve your grade</h1>
-      <p>Name: ...</p>
-      <p>Student ID: ...</p>
-      Get Grade!
+      <section>
+        <h1>Retrieve your grade</h1>
+      </section>
+      <form class="form-styles" action="https://mumstudents.org/params.php">
+        <div class="margin">
+          <label for="name">Name:</label>
+          <input type="text" id="studentName" name="name" />
+        </div>
+        <div class="margin">
+          <label for="name">Student ID:</label>
+          <input type="text" id="studentID" name="studentID" />
+        </div>
+        <div>
+          <input class="button-styles" type="submit" value="Submit" />
+        </div>
+      </form>
     </main>
   </body>
 </html>
