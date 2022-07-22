@@ -1,0 +1,26 @@
+body {
+  border: 2px solid blue;
+  padding: 25px;
+}
+
+textarea {
+  width: 300px;
+  height: 125px;
+}
+
+.title {
+  color: blue;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.margin-bottom {
+  margin-bottom: 15px;
+}
+
+.action-items-width {
+  width: 200px;
+}
