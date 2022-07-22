@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/taskslist.css" />
+    <script type="text/javascript" src="../js/tasksList.js"></script>
     <title>Tasks List</title>
   </head>
   <body>
@@ -27,10 +28,14 @@
             />
           </div>
           <div class="margin-bottom">
-            <button class="action-items-width">Add Task</button>
+            <button onclick="addTask()" class="action-items-width">
+              Add Task
+            </button>
           </div>
           <div class="margin-bottom">
-            <button class="action-items-width">Clear Tasks</button>
+            <button onclick="clearTasks()" class="action-items-width">
+              Clear Tasks
+            </button>
           </div>
         </div>
         <div>
