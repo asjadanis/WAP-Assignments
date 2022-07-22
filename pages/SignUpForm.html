@@ -16,42 +16,88 @@
         <h1>Enter Details Below</h1>
       </section>
         <form class="form-styles" action="https://mumstudents.org/params.php">
-          <div class="margin">
-            <label for="name">Name:</label>
-            <input type="text" name="name" />
+          <div class="fields-wrapper">
+            <div class="field-container">
+              <label for="name">Name:</label>
+            </div>
+            <div class="field- container float-right">
+              <input type="text" name="name" />
+            </div>
           </div>
-          <div class="margin">
-            <label for="gender">Gender:</label>
-            <input type="radio" name="gender">Male</input>
-            <input type="radio" name="gender">Female</input>
+          <div class="fields-wrapper">
+            <div class="field-container">
+              <label for="gender">Gender:</label>
+            </div>
+            <div class="field-container float-right">
+              <input type="radio" name="gender">Male</input>
+              <input type="radio" name="gender">Female</input>
+            </div>
           </div>
-          <div class="margin">
-            <label for="age">Age:</label>
-            <input type="number" name="age" min="10" max="100" />
+          <div class="fields-wrapper">
+            <div class="field-container">
+              <label for="age">Age:</label>
+            </div>
+            <div class="field-container float-right">
+              <input type="number" name="age" min="10" max="100" />
+            </div>
           </div>
-          <div class="margin">
-            <label for="personality">Personality type:</label>
-            <input type="text" name="personality" />
-            <span> (Don't Know your type) </span>
+          <div class="fields-wrapper">
+            <div class="field-container">
+              <label for="personality">Personality type:</label>
+            </div>
+            <div class="field-container float-right">
+              <input type="text" name="personality" />
+              <span class="text-styles"> (Don't Know your type) </span>
+            </div>
           </div>
-          <div class="margin">
-            <label for="os">Favourite OS:</label>
-            <select name="os">
-              <option>Windows</option>
-              <option>Mac</option>
-              <option>Linux</option>
-            </select>
+          <div class="fields-wrapper">
+            <div class="field-container">
+              <label for="os">Favourite OS:</label>
+            </div>
+            <div class="field-container float-right">
+              <select name="os">
+                <option>Windows</option>
+                <option>Mac</option>
+                <option>Linux</option>
+              </select>
+            </div>
           </div>
-          <div class="margin">
-            <label for="seekingage">Seeking Age:</label>
-            <input type="number" name="seekingage" min="0" max="100" />
-            <span> to </span>
-            <input type="number" name="seekingage" min="0" max="100" />
+          <div class="fields-wrapper">
+            <div class="field-container">
+              <label for="seekingage">Seeking Age:</label>
+            </div>
+            <div class="field-container float-right">
+              <input type="number" placeholder="max" name="seekingage" min="0" max="100" />
+              <span> to </span>
+              <input type="number" placeholder="max" name="seekingage" min="0" max="100" />
+            </div>
           </div>
           <div>
             <input class="button-styles" type="submit" value="Submit" />
           </div>
         </form>
+        <div class="validator-styles">
+          <div>
+            <a
+              href="http://validator.w3.org/check/?uri=https://asjadanis.github.io/WAP-Assignments/pages/SignUpForm.html"
+            >
+              <img
+                class="validator-img-styles"
+                src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
+                alt="html validator"
+            /></a>
+          </div>
+          <div>
+            <a
+              href="https://jigsaw.w3.org/css-validator/validator?uri=https://asjadanis.github.io/WAP-Assignments//pages/SignUpForm.html"
+            >
+              <img
+                class="validator-img-styles"
+                src="https://mumstudents.org/cs472/2013-09/images/w3c-css.png"
+                alt="css validator"
+            /></a>
+          </div>
+        </div>
     </main>
   </body>
 </html>
