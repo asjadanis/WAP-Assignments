@@ -4,7 +4,8 @@
 	CSE 190M, Summer 2012
 	This file is a tip calculator page using JavaScript.
 	-->
-  <script type="text/javascript">
+  <!-- Refactored Javascript into an external js file and included that in the page -->
+  <!-- <script type="text/javascript">
     function calcTip() {
       // Enter your code here to make Tip Calculator work
       const subTotal = parseFloat(document.getElementById("subtotal").value);
@@ -13,10 +14,11 @@
       const totalElement = document.getElementById("total");
       totalElement.innerHTML = `$${total.toFixed(2)}`;
     }
-  </script>
+  </script> -->
   <head>
     <title>Tip Calculator</title>
     <link href="../styles/tip.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="../js/tip.js"></script>
   </head>
 
   <body>
