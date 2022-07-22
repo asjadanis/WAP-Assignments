@@ -1,5 +1,5 @@
 body {
-  background-image: url("./public/images/lab3-images/background.png");
+  background-image: url("../public/images/lab3-images/background.png");
   font-size: 8pt;
   font-family: Verdana, Tahoma, sans-serif;
   margin: 0;
@@ -21,14 +21,14 @@ a {
 }
 
 .banner-background {
-  background-image: url("./public/images/lab3-images/bannerbg.png");
+  background-image: url("../public/images/lab3-images/bannerbg.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 50px;
 }
 
 .banner {
-  background-image: url("./public/images/lab3-images/banner.png");
+  background-image: url("../public/images/lab3-images/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 50%;
@@ -70,13 +70,13 @@ a {
 }
 
 .rotten-background {
-  background-image: url("./public/images/lab3-images/rbg.png");
+  background-image: url("../public/images/lab3-images/rbg.png");
   height: 83px;
   border-top-left-radius: 17px;
 }
 
 .rotten {
-  background-image: url("./public/images/lab3-images/rottenbig.png");
+  background-image: url("../public/images/lab3-images/rottenbig.png");
   background-repeat: no-repeat;
   border-radius: 17px;
   height: 83px;
@@ -91,7 +91,7 @@ a {
 }
 
 .movie-overview-styles {
-  background-image: url("./public/images/lab3-images/overview.png");
+  background-image: url("../public/images/lab3-images/overview.png");
   border-top-right-radius: 17px;
   height: 412px;
   margin-bottom: 10pt;
