@@ -7,6 +7,7 @@
       type="text/css"
       rel="stylesheet"
     />
+    <script type="text/javascript" src="../js/decoratemytext.js"></script>
   </head>
 
   <body>
@@ -16,6 +17,30 @@
       <img src="../public/images/decorated.gif" alt="very decorated!" />
     </div>
 
+    <div>
+      <fieldset>
+        <legend>Text</legend>
+        <textarea id="textArea" rows="4" cols="30"> </textarea>
+      </fieldset>
+    </div>
     <!-- Your UI controls go here -->
+    <div>
+      <fieldset>
+        <legend>Decoration</legend>
+        <div>
+          <button onclick="onButtonClick()">Bigger Decorations!</button>
+          <button onclick="onLatinClick()">Igpay Atinlay</button>
+          <button onclick="onMalkovitchClick()">Malkovitch</button>
+        </div>
+        <div>
+          <input
+            id="blingCheckBox"
+            onchange="handleCheckBox()"
+            type="checkbox"
+          />
+          <span>Bling</span>
+        </div>
+      </fieldset>
+    </div>
   </body>
 </html>

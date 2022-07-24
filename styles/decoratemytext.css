@@ -25,4 +25,5 @@ legend {
 textarea {
   font-family: monospace;
   font-size: 12pt;
+  text-align: end;
 }
