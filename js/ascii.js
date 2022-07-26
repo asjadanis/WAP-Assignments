@@ -1,3 +1,12 @@
+"use struct";
+
+function handleChangeAnimation() {
+  const animation = document.getElementById("animation").value;
+  const textArea = document.getElementById("myTextArea");
+  console.log(ANIMATIONS);
+  textArea.value = ANIMATIONS[animation];
+}
+
 function handleSizeChange() {
   const size = document.getElementById("sizeDropdown").value;
   switch (size) {

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/ascii.css" />
     <script src="../js/ascii.js" type="text/javascript"></script>
+    <script src="../js/animation.js" type="text/javascript"></script>
     <title>ASCIImation</title>
   </head>
   <body>
@@ -28,13 +29,13 @@
           <div>
             <fieldset>
               <legend>Animation:</legend>
-              <select>
-                <option>Blank</option>
-                <option>Exercise</option>
-                <option>Juggler</option>
-                <option>Bike</option>
-                <option>Dive</option>
-                <option>Custom</option>
+              <select id="animation" onchange="handleChangeAnimation()">
+                <option value="blank">Blank</option>
+                <option value="exercise">Exercise</option>
+                <option value="juggler">Juggler</option>
+                <option value="bike">Bike</option>
+                <option value="dive">Dive</option>
+                <option value="custom">Custom</option>
               </select>
             </fieldset>
           </div>
