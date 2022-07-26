@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/ascii.css" />
+    <script src="../js/ascii.js" type="text/javascript"></script>
+    <title>ASCIImation</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="main-heading align-center">
+        CSE 190 M ASCII Animation Viewer
+      </h1>
+    </header>
+    <main>
+      <section class="align-center">
+        <textarea id="myTextArea" cols="80" rows="20"></textarea>
+        <div class="fields-container">
+          <div>
+            <fieldset>
+              <legend>Play Controls:</legend>
+              <button>Start</button>
+              <button disabled>Stop</button>
+            </fieldset>
+          </div>
+          <div>
+            <fieldset>
+              <legend>Animation:</legend>
+              <select>
+                <option>Blank</option>
+                <option>Exercise</option>
+                <option>Juggler</option>
+                <option>Bike</option>
+                <option>Dive</option>
+                <option>Custom</option>
+              </select>
+            </fieldset>
+          </div>
+          <div>
+            <fieldset>
+              <legend>Size:</legend>
+              <select id="sizeDropdown" onchange="handleSizeChange()">
+                <option value="t">Tiny</option>
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+                <option value="xl">Extra Large</option>
+                <option value="xxl">XXL</option>
+              </select>
+            </fieldset>
+          </div>
+          <div>
+            <fieldset>
+              <legend>Speed:</legend>
+              <input type="checkbox" />
+              <label>Turbo</label>
+            </fieldset>
+          </div>
+        </div>
+      </section>
+      <div class="validator-styles">
+        <div>
+          <a
+            href="http://validator.w3.org/check/?uri=https://asjadanis.github.io/WAP-Assignments/pages/ascii.html"
+          >
+            <img
+              class="validator-img-styles"
+              src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
+              alt="html validator"
+          /></a>
+        </div>
+        <div>
+          <a
+            href="https://jigsaw.w3.org/css-validator/validator?uri=https://asjadanis.github.io/WAP-Assignments/pages/ascii.html"
+          >
+            <img
+              class="validator-img-styles"
+              src="https://mumstudents.org/cs472/2013-09/images/w3c-css.png"
+              alt="css validator"
+          /></a>
+        </div>
+        <div>
+          <a href="https://webster.cs.washington.edu/jslint/?referer">
+            <img
+              src="https://webster.cs.washington.edu/w3c-js.png"
+              alt="Valid JS"
+            />
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

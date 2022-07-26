@@ -1,0 +1,38 @@
+body {
+  background-color: #ccccff;
+  font-style: "san-serif";
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+textarea {
+  width: 90%;
+  height: 400px;
+  font-size: 12pt;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+fieldset {
+  border: 5px solid black;
+}
+
+.main-heading {
+  font-size: 32pt;
+  font-weight: bold;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.fields-container {
+  display: flex;
+  justify-content: center;
+}
+
+.validator-styles {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
