@@ -1,5 +1,12 @@
 "use struct";
 
+const NORMAL_ANIMATION_SPEED = 250;
+const TURBO_ANIMATION_SPEED = 50;
+
+let interval = null;
+let intervalSpeed = NORMAL_ANIMATION_SPEED;
+let currentFrames = [];
+
 function handleChangeAnimation() {
   const animation = document.getElementById("animation").value;
   const textArea = document.getElementById("myTextArea");
@@ -31,4 +38,47 @@ function handleSizeChange() {
     default:
       return;
   }
+}
+
+function onStart() {
+  const textArea = document.getElementById("myTextArea");
+  document.getElementById("stopBtn").disabled = false;
+  const animation = textArea.value;
+  currentFrames = animation.split("=====\n");
+  console.log(frames);
+  if (interval) {
+    clearInterval(interval);
+  }
+  document.getElementById("startBtn").disabled = true;
+  document.getElementById("animation").disabled = true;
+  interval = setInterval(dsiplayFrames, intervalSpeed);
+}
+
+function onStop() {
+  document.getElementById("startBtn").disabled = false;
+  document.getElementById("stopBtn").disabled = true;
+  document.getElementById("animation").disabled = false;
+  clearInterval(interval);
+}
+
+function onTurboClick() {
+  const turbo = document.getElementById("turboCheckBox").checked;
+  if (turbo) {
+    intervalSpeed = TURBO_ANIMATION_SPEED;
+  } else {
+    intervalSpeed = NORMAL_ANIMATION_SPEED;
+  }
+  clearInterval(interval);
+  interval = setInterval(dsiplayFrames, intervalSpeed);
+}
+
+/**
+ *
+ * @param {Array} frames
+ */
+function dsiplayFrames() {
+  const textArea = document.getElementById("myTextArea");
+  const currentFrame = currentFrames.shift();
+  textArea.value = currentFrame;
+  currentFrames.push(currentFrame);
 }

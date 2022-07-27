@@ -22,8 +22,8 @@
           <div>
             <fieldset>
               <legend>Play Controls:</legend>
-              <button>Start</button>
-              <button disabled>Stop</button>
+              <button id="startBtn" onclick="onStart()">Start</button>
+              <button id="stopBtn" onclick="onStop()" disabled>Stop</button>
             </fieldset>
           </div>
           <div>
@@ -55,7 +55,11 @@
           <div>
             <fieldset>
               <legend>Speed:</legend>
-              <input type="checkbox" />
+              <input
+                id="turboCheckBox"
+                onchange="onTurboClick()"
+                type="checkbox"
+              />
               <label>Turbo</label>
             </fieldset>
           </div>
