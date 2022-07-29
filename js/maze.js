@@ -21,10 +21,10 @@ $(document).ready(function () {
     var r2h = r2.height();
 
     if (
-      r1y + r1h < r2y ||
-      r1y > r2y + r2h ||
-      r1x > r2x + r2w ||
-      r1x + r1w < r2x
+      r1y + r1h <= r2y ||
+      r1y >= r2y + r2h ||
+      r1x >= r2x + r2w ||
+      r1x + r1w <= r2x
     ) {
       return false;
     } else {
