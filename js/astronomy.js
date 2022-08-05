@@ -1,7 +1,8 @@
 // Fetch version
 function handleButtonClick() {
   const date = document.getElementById("date").value;
-  const url = `https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${date}`;
+  const apiKey = "nWAmGvfvdAHZKG1d6PJNF4eb6sN8pXwqslbulVE4";
+  const url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${date}`;
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
