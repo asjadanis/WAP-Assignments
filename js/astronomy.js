@@ -6,6 +6,10 @@ function handleButtonClick() {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
+      const error = data.error;
+      if (error && error.code === "OVER_RATE_LIMIT") {
+        return alert("You have exceeded the rate limit for this API");
+      }
       document.getElementById("pic").src = data.url;
       const title = document.createElement("h2");
       title.textContent = data.title;
