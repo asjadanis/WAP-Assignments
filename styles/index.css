@@ -10,6 +10,12 @@ body {
   height: 100%;
 }
 
+ul {
+  max-height: 250px;
+  height: 250px;
+  overflow: scroll;
+}
+
 nav {
   display: flex;
   justify-content: flex-end;
